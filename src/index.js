@@ -17,9 +17,10 @@ class ChartComponent extends React.Component {
 			return <div>Loading...</div>
 		}
 		return (
-			<TypeChooser>
-				{type => <Chart type={type} data={this.state.data} />}
-			</TypeChooser>
+			// <TypeChooser>
+			// 	{type => <Chart type={type} data={this.state.data} />}
+			// </TypeChooser>
+			<Chart type={'svg'} data={this.state.data} />
 		)
 	}
 }
